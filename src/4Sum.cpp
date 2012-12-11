@@ -8,7 +8,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <limits>
 using namespace std;
 
 class Solution {
@@ -66,10 +65,15 @@ public:
         val.sum = target - (num[i] + num[j]);
         pair<vector<TwoSum>::iterator,vector<TwoSum>::iterator> bounds =
             equal_range(sums.begin(), sums.end(), val, sumcmp);
-        int prv_third = std::numeric_limits<int>::min();
+        bool prv = false;
+        int prv_third = 0;
         for (vector<TwoSum>::iterator it = bounds.first; it != bounds.second; ++it) {
           if (it->a <= j) continue;
-          if (prv_third == num[it->a]) continue;
+          if (!prv) {
+            prv = true;
+          } else if (prv_third == num[it->a]) {
+            continue;
+          }
           prv_third = num[it->a];
 
           vecs.push_back(vector<int>());

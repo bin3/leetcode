@@ -33,26 +33,7 @@ public:
   }
 };
 
-void Output(const vector<int>& vec, std::ostream& os = std::cout) {
-  os << "[";
-  for (size_t i = 0; i < vec.size(); ++i) {
-    os << vec[i] << " ";
-  }
-  os << "]\n";
-}
-
-void Output(const vector<vector<int> >& triples, std::ostream& os = std::cout) {
-  for (size_t i = 0; i < triples.size(); ++i) {
-    os << "(";
-    if (triples[i].size() > 0) {
-      os << triples[i][0];
-    }
-    for (size_t j = 1; j < triples[i].size(); ++j) {
-      os << ", " << triples[i][j];
-    }
-    os << ")\n";
-  }
-}
+#include "util.h"
 
 int main(int argc, char **argv) {
   std::cout << "------" << argv[0] << "------" << std::endl;

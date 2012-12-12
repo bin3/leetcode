@@ -4,7 +4,8 @@
 #g++ 3SumClosest.cpp
 #g++ -g 4Sum.cpp
 #g++ Subsets.cpp
-g++ Subsets2.cpp
+#g++ Subsets2.cpp
+g++ ContainerWithMostWater.cpp
 
 if [ ! $? -eq 0 ]
 then

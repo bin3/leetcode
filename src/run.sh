@@ -2,7 +2,8 @@
 
 #g++ 3Sum.cpp
 #g++ 3SumClosest.cpp
-g++ -g 4Sum.cpp
+#g++ -g 4Sum.cpp
+g++ Subsets.cpp
 
 if [ ! $? -eq 0 ]
 then

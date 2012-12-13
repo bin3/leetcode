@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-g++ FirstMissingPositive.cpp
+g++ BalancedBinaryTree.cpp
 
 if [ ! $? -eq 0 ]
 then

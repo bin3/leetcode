@@ -6,7 +6,8 @@
 #g++ Subsets.cpp
 #g++ Subsets2.cpp
 #g++ ContainerWithMostWater.cpp
-g++ LongestCommonPrefix.cpp
+#g++ LongestCommonPrefix.cpp
+g++ ClimbingStairs.cpp
 
 if [ ! $? -eq 0 ]
 then

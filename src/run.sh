@@ -7,7 +7,8 @@
 #g++ Subsets2.cpp
 #g++ ContainerWithMostWater.cpp
 #g++ LongestCommonPrefix.cpp
-g++ ClimbingStairs.cpp
+#g++ ClimbingStairs.cpp
+g++ ReverseInteger.cpp
 
 if [ ! $? -eq 0 ]
 then

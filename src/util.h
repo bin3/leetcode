@@ -11,6 +11,12 @@
 #include <iostream>
 #include <vector>
 
+#define NAME_VAL(v) #v << "=" << v
+#define NAME_VAL_COMMA(v) NAME_VAL(v) << ", "
+#define NV_ NAME_VAL
+#define NVC_ NAME_VAL_COMMA
+#define NVE_(v) NV_(v) << "\n"
+
 template<typename T>
 static void Output(const std::vector<T>& vec, std::ostream& os = std::cout) {
   os << "[";
@@ -18,6 +24,18 @@ static void Output(const std::vector<T>& vec, std::ostream& os = std::cout) {
     os << vec[0];
   }
   for (size_t i = 1; i < vec.size(); ++i) {
+    os << ", " << vec[i];
+  }
+  os << "]\n";
+}
+
+template<typename T>
+static void Output(const T* vec, size_t n, std::ostream& os = std::cout) {
+  os << "[";
+  if (n > 0) {
+    os << vec[0];
+  }
+  for (size_t i = 1; i < n; ++i) {
     os << ", " << vec[i];
   }
   os << "]\n";

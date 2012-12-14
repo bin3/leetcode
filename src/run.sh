@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-g++ ConstructBinaryTreeFromPreorderAndInorderTraversal.cpp
+g++ TrappingRainWater.cpp
 
 if [ ! $? -eq 0 ]
 then

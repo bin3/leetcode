@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-g++ InorderTraversal.cpp
+g++ BinaryTreeLevelOrderTraversal.cpp
 
 if [ ! $? -eq 0 ]
 then

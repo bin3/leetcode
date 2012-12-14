@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-g++ BinaryTreeMaximumPathSum.cpp
+g++ BinaryTreeZigzagLevelOrderTraversal.cpp
 
 if [ ! $? -eq 0 ]
 then

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-g++ BinaryTreeZigzagLevelOrderTraversal.cpp
+g++ ConstructBinaryTreeFromInorderAndPostorderTraversal.cpp
 
 if [ ! $? -eq 0 ]
 then

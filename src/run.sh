@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-g++ BalancedBinaryTree.cpp
+g++ InorderTraversal.cpp
 
 if [ ! $? -eq 0 ]
 then

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-g++ ConstructBinaryTreeFromInorderAndPostorderTraversal.cpp
+g++ ConstructBinaryTreeFromPreorderAndInorderTraversal.cpp
 
 if [ ! $? -eq 0 ]
 then

@@ -43,16 +43,18 @@ static void Output(const T* vec, size_t n, std::ostream& os = std::cout) {
 
 template<typename T>
 static void Output(const std::vector<std::vector<T> >& vecs, std::ostream& os = std::cout) {
+  os << "[\n";
   for (size_t i = 0; i < vecs.size(); ++i) {
-    os << "(";
+    os << "  [";
     if (vecs[i].size() > 0) {
       os << vecs[i][0];
     }
     for (size_t j = 1; j < vecs[i].size(); ++j) {
       os << ", " << vecs[i][j];
     }
-    os << ")\n";
+    os << "]\n";
   }
+  os << "]\n";
 }
 
 #endif /* UTIL_H_ */

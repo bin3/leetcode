@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-g++ MergeIntervals.cpp
+g++ SpiralMatrix.cpp
 
 if [ ! $? -eq 0 ]
 then

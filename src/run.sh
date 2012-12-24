@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-g++ TrappingRainWater.cpp
+g++ MergeIntervals.cpp
 
 if [ ! $? -eq 0 ]
 then

@@ -57,4 +57,9 @@ static void Output(const std::vector<std::vector<T> >& vecs, std::ostream& os = 
   os << "]\n";
 }
 
+template<typename T>
+static void Output(const T& x, std::ostream& os = std::cout) {
+  os << x << "\n";
+}
+
 #endif /* UTIL_H_ */

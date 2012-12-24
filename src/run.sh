@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-g++ SpiralMatrix.cpp
+g++ SpiralMatrix2.cpp
 
 if [ ! $? -eq 0 ]
 then

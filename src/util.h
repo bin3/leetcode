@@ -62,4 +62,10 @@ static void Output(const T& x, std::ostream& os = std::cout) {
   os << x << "\n";
 }
 
+template<typename T>
+static void ToVector(const T* arr, int sz, std::vector<T>* vec) {
+  vector<T> tmp(arr, arr + sz);
+  vec->swap(tmp);
+}
+
 #endif /* UTIL_H_ */
